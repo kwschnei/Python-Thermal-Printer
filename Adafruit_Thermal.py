@@ -73,7 +73,7 @@ class Adafruit_Thermal(Serial):
 		# version number * 100 + the minor version number (e.g.
 		# pass "firmware=264" for version 2.64.
 		self.firmwareVersion = kwargs.pop('firmware', 268)
- 		heatTime = kwargs.pop('heattime', self.defaultHeatTime)
+		heatTime = kwargs.pop('heattime', self.defaultHeatTime)
 
 		if self.writeToStdout is False:
 			# Calculate time to issue one byte to the printer.
