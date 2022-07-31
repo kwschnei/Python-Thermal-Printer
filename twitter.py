@@ -120,9 +120,9 @@ for tweet in data['statuses']:
   # Remove HTML escape sequences
   # and remap Unicode values to nearest ASCII equivalents
    # Use textwrap module to wrap neatly at 32 characters
-   tweettext=textwrap.wrap(unidecode(
+  tweettext=textwrap.wrap(unidecode(
      HTMLParser.HTMLParser().unescape(tweet['text'])),32)
-   for line in tweettext:
+  for line in tweettext:
      printer.print(line + "\n")
 
   printer.feed(3)
